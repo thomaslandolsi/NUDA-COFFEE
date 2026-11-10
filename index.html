@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>núda Coffee &amp; More · Nicosia</title>
+<meta name="description" content="núda Coffee &amp; More, a quiet café by the park on Agion Omologiton 101, Nicosia. Good coffee from 6:00, plant milks, tables outside, takeaway and delivery on Foody. Call 22 254007.">
+<meta name="theme-color" content="#F3F0EA">
+<!-- DEMO: keep out of search engines until the café says yes; remove this line for the real launch -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="núda Coffee &amp; More · Nicosia">
+<meta property="og:description" content="Coffee, bare. Open at six, by the park on Agion Omologiton. Come as you are.">
+<!-- DEPLOY STEP: og:image and og:url point at the demo address; patch again for the real domain -->
+<meta property="og:image" content="https://thomaslandolsi.github.io/NUDA-COFFEE/assets/hero-ending.jpg">
+<meta property="og:url" content="https://thomaslandolsi.github.io/NUDA-COFFEE/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F3F0EA'/%3E%3Cpath d='M17 46V27m0 6c0-4 3.5-7 8-7s8 3 8 7v13M47 26v13c0 4-3.5 7-8 7' fill='none' stroke='%232B2E31' stroke-width='4.2' stroke-linecap='round'/%3E%3Cpath d='M41 14l4-5' stroke='%232B2E31' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;500&family=JetBrains+Mono:wght@400&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&text=n%C3%BAda&display=swap">
+<style>
+:root{
+  --canvas:#F3F0EA;
+  --panel:#E9E3D9;
+  --milk:#FBF9F5;
+  --ink:#2B2E31;
+  --ink-2:#5A5650;
+  --oak:#87552F;
+  --oak-soft:#C9A684;
+  --accent:#4E6B35;
+  --accent-hover:#3F5A2A;
+  --accent-muted:rgba(78,107,53,.18);
+  --line:rgba(43,46,49,.14);
+  --line-strong:rgba(43,46,49,.42);
+  --display:"Commissioner","Helvetica Neue",Arial,sans-serif;
+  --body:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --mark:"Quicksand","Manrope",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --tglow:0 0 1px rgba(251,249,245,.95),0 0 14px rgba(251,249,245,.85),0 0 40px rgba(251,249,245,.7);
+  --gutter:clamp(20px,5vw,76px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:hidden;overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden;overflow-x:clip;background:var(--canvas);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;animation:pagein .9s var(--ease) both}
+@keyframes pagein{from{opacity:0}to{opacity:1}}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;left:16px;top:-60px;z-index:100;background:var(--ink);color:var(--milk);padding:10px 16px;border-radius:999px;text-decoration:none;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+main:focus{outline:none}
+
+/* ---------- environment: morning light drifting across plaster ---------- */
+.env{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--canvas)}
+.env::before{content:"";position:absolute;width:110vmax;height:110vmax;left:-20%;top:-40%;background:
+  radial-gradient(closest-side,rgba(255,236,200,.42),rgba(255,236,200,0) 70%),
+  radial-gradient(closest-side at 70% 60%,rgba(140,170,110,.10),rgba(140,170,110,0) 60%);
+  animation:sun 80s ease-in-out infinite alternate;animation-delay:-24s}
+.env::after{content:"";position:absolute;inset:-50%;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes sun{0%{transform:translate(0,0)}50%{transform:translate(28%,18%)}100%{transform:translate(52%,46%)}}
+
+/* ---------- the wordmark ---------- */
+.mark{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);line-height:1}
+.mark b{font-family:var(--mark);font-weight:500;font-size:34px;letter-spacing:-.01em;line-height:.9}
+.mark i{font-style:normal;font-family:var(--body);font-weight:700;font-size:7.4px;letter-spacing:.34em;padding-left:.34em;margin-top:4px}
+
+/* ---------- nav with the awning edge ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px var(--gutter);transition:background-color .5s var(--ease)}
+.nav::before{content:"";position:absolute;inset:0 0 -40px 0;z-index:-1;pointer-events:none;background:linear-gradient(rgba(243,240,234,.86),rgba(243,240,234,0));transition:opacity .5s var(--ease)}
+.nav .awn{position:absolute;left:0;right:0;top:100%;height:16px;opacity:0;transform:translateY(-6px);transition:opacity .5s var(--ease),transform .6s var(--ease-out);pointer-events:none}
+.nav.solid{background:var(--milk)}
+.nav.solid::before{opacity:0}
+.nav.solid .awn{opacity:1;transform:none}
+.nav-links{display:flex;align-items:center;gap:clamp(12px,2.2vw,30px)}
+.nav-links a.lk{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--ink-2);transition:color .3s var(--ease)}
+.nav-links a.lk:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line-strong);border-radius:999px;padding:2px}
+.lang button{background:none;border:0;cursor:pointer;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;padding:6px 10px;border-radius:999px;color:var(--ink-2);transition:background-color .3s var(--ease),color .3s var(--ease)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--milk)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ink);color:var(--milk);text-decoration:none;font-family:var(--body);font-weight:700;font-size:16px;letter-spacing:.01em;padding:14px 24px;border-radius:999px;border:0;cursor:pointer;text-shadow:none;transition:background-color .3s var(--ease),transform .45s var(--ease-out),box-shadow .45s var(--ease)}
+.btn:hover{background:#1C1E20;transform:translateY(-2px);box-shadow:0 10px 26px rgba(43,46,49,.18)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.sm{font-size:14px;padding:10px 16px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line-strong)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px var(--ink);background:rgba(43,46,49,.04)}
+@media (max-width:760px){.nav-links a.lk{display:none}}
+@media (max-width:380px){.nav-links{gap:8px}.nav .btn.sm{padding:10px 12px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;height:420vh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#EDE9E2}
+.poster,.vwrap{position:absolute;inset:0}
+.poster{background:#EDE9E2 center/cover no-repeat}
+.vwrap{opacity:0;transition:opacity .8s var(--ease);will-change:transform;transform-origin:50% 55%}
+.stage.video-ready .vwrap{opacity:1}
+.stage.video-failed .vwrap{display:none}
+#hero{width:100%;height:100%;object-fit:cover;transform:translateZ(0)}
+.scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(243,240,234,.55) 0%,rgba(243,240,234,0) 18%),radial-gradient(ellipse 130% 95% at 50% 50%,rgba(243,240,234,0) 55%,rgba(243,240,234,.4) 100%)}
+.band{position:absolute;top:52%;width:min(440px,31vw);transform:translateY(-50%);opacity:0;text-shadow:var(--tglow);pointer-events:none}
+.band.l{left:var(--gutter)}
+.band.r{right:var(--gutter)}
+.band.live{pointer-events:auto}
+/* light scrim: the footage is bright plaster, so the words are dark and the scrim lifts the wall behind them */
+.band::before{content:"";position:absolute;inset:-34% -30% -34% -34%;z-index:-1;pointer-events:none;opacity:calc(.3 + .7*var(--k,1));background:radial-gradient(ellipse 66% 60% at 46% 50%,rgba(247,244,239,var(--sa,.7)) 0%,rgba(247,244,239,calc(var(--sa,.7)*.7)) 48%,rgba(247,244,239,0) 78%)}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--oak);margin:0 0 18px}
+.h{font-family:var(--display);font-weight:200;font-size:clamp(48px,5vw,96px);line-height:.98;letter-spacing:-.025em;margin:0;color:var(--ink)}
+.band .sub{font-size:clamp(17px,1.3vw,20px);font-weight:500;line-height:1.5;color:var(--ink);margin:22px 0 0;max-width:30ch;opacity:var(--ks,1)}
+.band .row{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;opacity:var(--kb,1);transform:translateY(calc((1 - var(--kb,1))*14px))}
+.band .btn{text-shadow:none}
+.w{display:inline-block;white-space:nowrap}
+.c{display:inline-block}
+/* entrance: drift down (the milk sinking) */
+.fx-drift .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.6,1);opacity:var(--kc);transform:translateY(calc((1 - var(--kc))*-30px))}
+/* entrance: cloud, soft to sharp while sinking (milk clouds unfolding) */
+.fx-cloud{display:grid}
+.fx-cloud>.vis{grid-area:1/1}
+.fx-cloud>.soft{filter:blur(12px);opacity:calc((1 - var(--k,0))*.8);transform:translateY(calc((1 - var(--k,0))*-18px))}
+.fx-cloud>.sharp .c{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.4,1);opacity:var(--kc);transform:translateY(calc((1 - var(--kc))*var(--jy,-20px)))}
+/* entrance: rise into a staged settle (the cup at rest) */
+.fx-rise .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*3,1);opacity:var(--kc);transform:translateY(calc((1 - var(--kc))*26px))}
+.band.b1{--sa:.74}
+.band.b2{--sa:.8;top:58%}
+.band.b3{--sa:.8}
+.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);text-shadow:var(--tglow);transition:opacity .5s var(--ease)}
+.cue.gone{opacity:0}
+.ring{width:38px;height:38px;color:var(--ink);transform:rotate(-90deg)}
+.ring .track{stroke:rgba(43,46,49,.14)}
+.chev{width:22px;height:22px;animation:bob 2.6s var(--ease) infinite;animation-delay:-.6s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.static-copy{display:none}
+@media (max-height:560px){.cue{display:none}}
+
+/* five static-hero gates: phones, portrait tablets, coarse portrait, landscape phones, reduced motion */
+@media (max-width: 720px), (orientation: portrait) and (max-width: 1024px), (orientation: portrait) and (pointer: coarse), (orientation: landscape) and (pointer: coarse) and (max-height: 560px), (prefers-reduced-motion: reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:auto;overflow:visible;background:var(--canvas)}
+  .poster{position:relative;inset:auto;height:68svh;min-height:380px;background-image:url("assets/hero-ending.jpg")!important;background-position:50% 60%}
+  .vwrap,.band,.cue{display:none!important}
+  .scrim{height:68svh;min-height:380px;background:linear-gradient(180deg,rgba(243,240,234,.7) 0%,rgba(243,240,234,0) 22%,rgba(243,240,234,0) 72%,rgba(243,240,234,1) 100%)}
+  .static-copy{display:block;position:relative;padding:4px var(--gutter) clamp(56px,10vh,96px)}
+  .static-copy .h{font-size:clamp(46px,12.5vw,84px)}
+  .static-copy .sub{font-size:18px;font-weight:500;margin:18px 0 0;max-width:32ch;color:var(--ink-2)}
+  .static-copy .row{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+}
+
+/* ---------- the awning divider (the signature) ---------- */
+.awning{position:relative;display:block;height:44px;margin:0;color:var(--ink)}
+.awning svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.awning .fab{fill:var(--milk)}
+.awning .edge{fill:none;stroke:var(--ink);stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s var(--ease-out) .1s}
+.awning.in .edge{stroke-dashoffset:0}
+.awning.on-panel .fab{fill:var(--panel)}
+
+/* ---------- shared section bits ---------- */
+section.sec{position:relative;padding:clamp(84px,11vw,160px) var(--gutter)}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--oak);margin:0 0 18px}
+.h2{font-family:var(--display);font-weight:200;font-size:clamp(42px,5.4vw,88px);line-height:1;letter-spacing:-.025em;margin:0}
+.lede{font-size:clamp(18px,1.45vw,21px);color:var(--ink-2);margin:22px 0 0;max-width:42ch}
+.reveal .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1s var(--ease-out)}
+.reveal.in .rv{opacity:1;transform:none}
+.reveal.in .rv:nth-child(2){transition-delay:.1s}
+.reveal.in .rv:nth-child(3){transition-delay:.2s}
+.reveal.in .rv:nth-child(4){transition-delay:.3s}
+.reveal.in .rv:nth-child(5){transition-delay:.4s}
+.reveal.done .rv,.reveal.done .rv:nth-child(n){transition-delay:0s}
+
+/* ---------- 1. bare means ---------- */
+.bare{background:var(--milk)}
+.bare-head{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(30px,5vw,90px);align-items:end}
+.bare-head .def{font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--ink-2);border-left:1.5px solid var(--oak-soft);padding:4px 0 4px 18px;margin:0}
+.bare-head .def b{font-family:var(--mark);font-weight:500;font-size:22px;color:var(--ink);letter-spacing:0}
+.cards{max-width:1240px;margin:clamp(48px,6vw,84px) auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,34px)}
+.card{position:relative}
+.card .ph{position:relative;overflow:hidden;border-radius:999px 999px 18px 18px;aspect-ratio:4/5;background:var(--panel)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.6s var(--ease-out)}
+.card.in .ph img{transform:scale(1)}
+.card:hover .ph img{transform:scale(1.03)}
+.card .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--oak);margin:22px 0 8px;display:block}
+.card h3{font-family:var(--display);font-weight:300;font-size:clamp(26px,2.2vw,34px);line-height:1.1;letter-spacing:-.015em;margin:0}
+.card p{color:var(--ink-2);margin:10px 0 0;max-width:34ch;font-size:17px}
+.card .part{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform 1.1s var(--ease-out)}
+.cards .card.in .part{opacity:1;transform:none}
+.cards .card:nth-child(2) .part{transition-delay:.12s}
+.cards .card:nth-child(3) .part{transition-delay:.24s}
+.cards .card.done:nth-child(n) .part{transition-delay:0s}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,240,210,0) 30%,rgba(255,240,210,.22) 50%,rgba(255,240,210,0) 70%);transform:translateX(-60%);animation:glint 9s var(--ease) infinite;animation-delay:-3s}
+.cards .card:nth-child(2) .ph::after{animation-delay:-6s}
+.cards .card:nth-child(3) .ph::after{animation-delay:-1s}
+@keyframes glint{0%,60%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
+
+/* ---------- 2. menu + hold to pour ---------- */
+.menu-sec{background:var(--panel)}
+.menu-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(40px,6vw,110px);align-items:start}
+.pour{position:sticky;top:110px;background:var(--milk);border-radius:28px;padding:clamp(24px,3vw,40px);box-shadow:0 1px 0 rgba(43,46,49,.06),0 30px 60px -30px rgba(43,46,49,.25)}
+.pour h3{font-family:var(--display);font-weight:300;font-size:clamp(28px,2.4vw,38px);letter-spacing:-.015em;margin:0;line-height:1.1}
+.pour-body{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:center;margin-top:20px}
+.cup{width:clamp(120px,13vw,170px);aspect-ratio:200/300}
+.cup svg{width:100%;height:100%;overflow:visible}
+.cup .outline{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linejoin:round}
+.cup .coffee{fill:#3A2418}
+.cup .ice rect{fill:rgba(255,255,255,.16);stroke:rgba(255,255,255,.28);stroke-width:1}
+.cup .cl{fill:#D9C3A3;opacity:calc(clamp(0,var(--p,0)*3 - var(--i)*.45,1)*.85);transform:translateY(calc(var(--p,0)*var(--dy)*1px)) scale(calc(.5 + var(--p,0)*.7));transform-box:fill-box;transform-origin:50% 0}
+.cup .stream{fill:#F4EEE3;transform:scaleY(0);transform-origin:50% 0;transition:transform .35s var(--ease)}
+.pour.pouring .cup .stream{transform:scaleY(1)}
+.pour.done .cup .stream{transform:scaleY(0)}
+.cup .logo{fill:#FBF9F5;font-family:var(--mark);font-weight:500;font-size:30px}
+.milks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.milks li{display:flex;align-items:center;gap:12px;font-size:16px;color:var(--ink-2);padding:9px 14px;border-radius:999px;background:rgba(43,46,49,.04);transition:background-color .5s var(--ease),color .5s var(--ease)}
+.milks li::before{content:"";width:10px;height:10px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px var(--line-strong);transition:background-color .5s var(--ease),box-shadow .5s var(--ease)}
+.milks li.lit{background:var(--accent-muted);color:var(--ink)}
+.milks li.lit::before{background:var(--accent);box-shadow:none}
+.holdbtn{margin-top:24px;position:relative;display:inline-flex;align-items:center;gap:14px;background:var(--canvas);border:1.5px solid var(--line-strong);border-radius:999px;padding:8px 22px 8px 8px;cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:none;-webkit-touch-callout:none;transition:border-color .3s var(--ease),background-color .3s var(--ease)}
+.holdbtn:hover{border-color:var(--ink)}
+.holdbtn .hr{width:42px;height:42px;transform:rotate(-90deg);flex:none}
+.holdbtn .hr circle{fill:none;stroke-width:3}
+.holdbtn .hr .t{stroke:rgba(43,46,49,.14)}
+.holdbtn .hr .f{stroke:var(--accent);stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--p,0))}
+.holdbtn span{font-weight:700;font-size:15px}
+.pour.done .holdbtn{border-color:var(--accent);background:var(--accent-muted)}
+.hint{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--ink-2);margin:12px 0 0}
+.menu-list h2{margin-bottom:6px}
+.mgroup{margin-top:clamp(36px,4vw,54px)}
+.mgroup h3{font-family:var(--mono);font-weight:400;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--oak);margin:0 0 6px;display:flex;align-items:center;gap:14px}
+.mgroup h3::after{content:"";flex:1;height:1px;background:var(--line-strong)}
+.mgroup ul{list-style:none;margin:0;padding:0}
+.mgroup li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--display);font-weight:300;font-size:clamp(22px,1.9vw,28px);letter-spacing:-.01em;line-height:1.2}
+.mgroup li small{font-family:var(--body);font-size:14px;color:var(--ink-2);font-weight:500;letter-spacing:0;text-align:right}
+.menu-foot{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:baseline}
+.menu-foot p{margin:0;color:var(--ink-2);font-size:16px;max-width:40ch}
+.tlink{font-weight:700;color:var(--ink);text-decoration:none;background:linear-gradient(var(--ink),var(--ink)) 0 100%/100% 1.5px no-repeat;padding-bottom:2px;transition:background-size .4s var(--ease-out)}
+.tlink:hover{background-size:0 1.5px;background-position:100% 100%}
+
+#mgroups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,3vw,48px)}
+#mgroups .mgroup li{font-size:clamp(19px,1.5vw,22px);padding:11px 0}
+#mgroups .mgroup li small{font-family:var(--mono);font-size:13.5px;color:var(--ink-2);font-weight:400;white-space:nowrap}
+
+/* ---------- 2b. from the counter ---------- */
+.shop-sec{background:var(--milk);padding-left:0;padding-right:0;overflow:hidden}
+.shop-head{max-width:1240px;margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,5vw,90px);align-items:end}
+.shop-side .lede{margin:0}
+.arrows{display:flex;gap:10px;margin-top:24px}
+.arr{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line-strong);background:transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--ink);transition:border-color .3s var(--ease),background-color .3s var(--ease),transform .4s var(--ease-out)}
+.arr:hover{border-color:var(--ink);background:rgba(43,46,49,.04)}
+.arr:active{transform:scale(.94)}
+.arr svg{width:20px;height:20px}
+.shop-track{margin-top:clamp(40px,5vw,70px)}
+.shop{display:flex;gap:clamp(16px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--gutter);padding:0 var(--gutter) 60px;scrollbar-width:none;-webkit-overflow-scrolling:touch;outline-offset:-4px}
+.shop::-webkit-scrollbar{display:none}
+.shop .item{flex:0 0 clamp(250px,26vw,360px);margin:0;scroll-snap-align:start}
+.shop .item:nth-child(even){margin-top:46px}
+.shop .ph{position:relative;overflow:hidden;border-radius:22px;aspect-ratio:1/1;background:var(--panel)}
+.shop .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease-out)}
+.shop .item:hover .ph img{transform:scale(1.04)}
+.shop figcaption{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;align-items:baseline;margin-top:16px}
+.shop .nm{font-family:var(--display);font-weight:300;font-size:clamp(21px,1.7vw,25px);letter-spacing:-.01em;line-height:1.2}
+.shop .pr{font-family:var(--mono);font-size:13.5px;color:var(--oak)}
+.shop .ds{grid-column:1/-1;font-size:15.5px;color:var(--ink-2)}
+.shop-track.reveal .rv{transform:translateX(60px)}
+.shop-track.reveal.in .rv{transform:none}
+@media (max-width:980px){.shop-head{grid-template-columns:minmax(0,1fr)}#mgroups{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.arrows{display:none}.shop .item{flex-basis:72vw}.shop .item:nth-child(even){margin-top:0}}
+
+/* ---------- 3. hours ---------- */
+.hours-sec{background:var(--canvas)}
+.hours-wrap{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(40px,6vw,110px);align-items:center}
+.six{position:relative;font-family:var(--display);font-weight:200;font-size:clamp(150px,22vw,330px);line-height:.8;letter-spacing:-.05em;color:var(--ink);margin:0 0 clamp(30px,3.4vw,48px);display:inline-block}
+.six sup{font-family:var(--mono);font-weight:400;font-size:clamp(14px,1.3vw,18px);letter-spacing:.14em;color:var(--oak);vertical-align:top;margin-left:10px;position:relative;top:1.2em}
+.sunline{position:absolute;left:0;bottom:-8px;width:100%;height:14px;overflow:visible}
+.sunline path{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s var(--ease-out) .3s}
+.in .sunline path{stroke-dashoffset:0}
+.board{background:var(--milk);border-radius:24px;padding:clamp(22px,3vw,36px);box-shadow:0 1px 0 rgba(43,46,49,.06),0 24px 50px -30px rgba(43,46,49,.25)}
+.status{display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;margin:0 0 16px}
+.status i{width:10px;height:10px;border-radius:50%;background:var(--oak-soft);flex:none;position:relative}
+.status.open i{background:var(--accent)}
+.status.open i::after{content:"";position:absolute;inset:-6px;border-radius:50%;background:var(--accent);opacity:0;animation:pulse 3.6s var(--ease) infinite;animation-delay:-1s}
+@keyframes pulse{0%{opacity:.35;transform:scale(.5)}70%,100%{opacity:0;transform:scale(1.6)}}
+.board ul{list-style:none;margin:0;padding:0;font-family:var(--mono);font-size:15px}
+.board li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0;border-bottom:1px dashed var(--line-strong)}
+.board li:last-child{border-bottom:0}
+.board li.today{color:var(--ink);font-weight:400}
+.board li.today span:first-child::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--oak);margin-right:10px;vertical-align:middle}
+.board li:not(.today){color:var(--ink-2)}
+
+/* ---------- 4. reviews ---------- */
+.rev-sec{background:var(--milk)}
+.rev-wrap{max-width:1240px;margin:0 auto}
+.score{display:flex;align-items:flex-end;gap:clamp(18px,3vw,40px);flex-wrap:wrap}
+.score .big{font-family:var(--display);font-weight:200;font-size:clamp(110px,14vw,210px);line-height:.8;letter-spacing:-.05em}
+.score .st{padding-bottom:10px}
+.stars{display:flex;gap:4px;color:var(--oak)}
+.stars svg{width:20px;height:20px}
+.score .st p{margin:8px 0 0;color:var(--ink-2);max-width:30ch}
+.quotes{margin:clamp(48px,6vw,80px) 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,2vw,24px)}
+.quote{margin:0;padding:26px 24px;border-radius:22px;background:var(--canvas);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.quote p{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(19px,1.5vw,22px);line-height:1.35;letter-spacing:-.005em}
+.quote footer{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.rev-sec .tlink{display:inline-block;margin-top:30px}
+
+/* ---------- 5. faq ---------- */
+.faq-sec{background:var(--canvas)}
+.faq-wrap{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,6vw,110px);align-items:start}
+.faq details{border-bottom:1px solid var(--line-strong)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--display);font-weight:300;font-size:clamp(21px,1.8vw,26px);line-height:1.25}
+.faq summary::-webkit-details-marker{display:none}
+.pm{position:relative;width:18px;height:18px;flex:none}
+.pm::before,.pm::after{content:"";position:absolute;left:0;right:0;top:8px;height:1.8px;background:var(--ink);border-radius:2px;transition:transform .45s var(--ease-out)}
+.pm::after{transform:rotate(90deg)}
+.faq details[open] .pm::after{transform:rotate(0)}
+.faq details p{margin:0 0 24px;color:var(--ink-2);max-width:52ch;animation:fade .5s var(--ease) both}
+@keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- 6. visit (the CTA) ---------- */
+.visit-sec{background:var(--milk);padding-bottom:clamp(60px,8vw,110px)}
+.visit{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(36px,5vw,90px);align-items:center}
+.visit .img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;background:var(--panel)}
+.visit .img img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.visit .h2{font-size:clamp(52px,6.6vw,110px)}
+.addr{font-style:normal;margin:26px 0 0;font-size:19px;line-height:1.55}
+.addr b{font-weight:700}
+.visit .note{color:var(--ink-2);margin:10px 0 0}
+.visit .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.visit .small{margin-top:20px;font-size:15px;color:var(--ink-2)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:#E9E5DE;padding:clamp(60px,7vw,96px) var(--gutter) 36px}
+.foot-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) repeat(3,minmax(0,auto));gap:clamp(28px,5vw,80px);align-items:start}
+.foot .mark{color:#F3F0EA;align-items:flex-start}
+.foot .mark b{font-size:56px}
+.foot .mark i{font-size:11px}
+.foot h4{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--oak-soft);margin:6px 0 12px}
+.foot p{margin:0;font-size:15.5px;line-height:1.7;color:#CFCAC2}
+.foot a{color:#F3F0EA;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot-base{max-width:1240px;margin:56px auto 0;padding-top:22px;border-top:1px solid rgba(243,240,234,.16);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:#A9A49C}
+.foot-base a{color:#E9E5DE}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .bare-head,.menu-grid,.hours-wrap,.faq-wrap,.visit{grid-template-columns:minmax(0,1fr)}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:center}
+  .card .ph{aspect-ratio:4/5}
+  .pour{position:relative;top:auto;order:2}
+  .quotes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-in{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .card{grid-template-columns:minmax(0,1fr)}
+  .card .ph{aspect-ratio:5/4;border-radius:200px 200px 16px 16px}
+  .quotes{grid-template-columns:minmax(0,1fr)}
+  .pour-body{grid-template-columns:minmax(0,1fr);justify-items:center}
+  .milks{width:100%}
+  .foot-in{grid-template-columns:minmax(0,1fr)}
+  .mgroup li{font-size:21px}
+}
+@media (pointer:coarse){.btn,.lang button,.holdbtn{min-height:44px}.btn{display:inline-flex;align-items:center;justify-content:center}.lang button{display:inline-flex;align-items:center;justify-content:center;min-width:44px}}
+
+/* pause loops off-screen and on hidden tabs */
+.paused-sec *,.paused-sec *::before,.paused-sec *::after{animation-play-state:paused!important}
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+
+/* reduced motion, honoured completely */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
+  html{scroll-behavior:auto}
+  .reveal .rv,.card .part{opacity:1!important;transform:none!important}
+  .card .ph img{transform:none!important}
+  .awning .edge,.sunline path{stroke-dashoffset:0!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<div class="env" aria-hidden="true"></div>
+
+<!-- sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5l2.6.4 1.2 4-1.9 1.4a12 12 0 0 0 6.2 6.2l1.4-1.9 4 1.2.4 2.6c-.2 1.5-1.5 2.6-3 2.6C10.3 20 4 13.7 4 6.5c0-1.5 1.1-2.8 2.6-3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8zm4 0V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.9 6.8 19.6l1-5.8L3.5 9.7l5.9-.8L12 3.5z" fill="currentColor"/></symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <a class="mark" href="#top" aria-label="núda Coffee &amp; More, back to top"><b>núda</b><i>COFFEE &amp; MORE</i></a>
+  <div class="nav-links">
+    <a class="lk" href="#menu" data-i18n="navMenu">Menu</a>
+    <a class="lk" href="#hours" data-i18n="navHours">Hours</a>
+    <a class="lk" href="#visit" data-i18n="navVisit">Visit</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="el" aria-pressed="false" lang="el">ΕΛ</button>
+    </div>
+    <a class="btn sm" href="#visit" data-i18n="navDir">Directions</a>
+  </div>
+  <span class="awn" aria-hidden="true"><svg class="scallop" data-depth="10" data-top="0"></svg></span>
+</nav>
+
+<header class="hero" id="top">
+  <div class="stage" id="stage">
+    <div class="poster" id="poster"></div>
+    <div class="vwrap" id="vwrap"><video id="hero" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video></div>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <div class="band b1 l" data-a="0" data-b="0.30">
+      <p class="kicker" data-i18n="b1k">Agion Omologiton · Nicosia</p>
+      <h1 class="h" data-split="b1h" data-fx="drift">Coffee, bare.</h1>
+      <p class="sub" data-i18n="b1s">Good beans. Cold milk. Nothing extra.</p>
+    </div>
+    <div class="band b2 r" data-a="0.35" data-b="0.68" data-ramp="0.05">
+      <p class="h" data-split="b2h" data-fx="cloud" role="heading" aria-level="2">Open at six.</p>
+      <p class="sub" data-i18n="b2s">A quiet corner by the park, before the city wakes up.</p>
+    </div>
+    <div class="band b3 l" data-a="0.74" data-b="1">
+      <p class="h" data-split="b3h" data-fx="rise" role="heading" aria-level="2">Come as you are.</p>
+      <p class="sub" data-i18n="b3s">Monday to Friday 6:00 to 17:00. Saturday 6:00 to 15:00.</p>
+      <div class="row">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nuda+Coffee+%26+More%2C+Agion+Omologiton+101%2C+Nicosia" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="ctaDir">Get directions</span></a>
+        <a class="btn ghost" href="tel:+35722254007"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="ctaCall">Call 22 254007</span></a>
+      </div>
+    </div>
+
+    <div class="cue" id="cue" aria-hidden="true">
+      <svg class="ring" id="ring" viewBox="0 0 48 48"><circle class="track" cx="24" cy="24" r="20" fill="none" stroke-width="3"/><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/></svg>
+      <span data-i18n="cue">Scroll</span>
+    </div>
+  </div>
+
+  <div class="static-copy">
+    <p class="kicker" data-i18n="b1k">Agion Omologiton · Nicosia</p>
+    <p class="h" role="heading" aria-level="1" data-i18n="b1h">Coffee, bare.</p>
+    <p class="sub" data-i18n="stS">Good coffee from six in the morning, in a quiet corner by the park. Come as you are.</p>
+    <div class="row">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nuda+Coffee+%26+More%2C+Agion+Omologiton+101%2C+Nicosia" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="ctaDir">Get directions</span></a>
+      <a class="btn ghost" href="tel:+35722254007"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="ctaCall">Call 22 254007</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div class="awning" aria-hidden="true"><svg class="scallop" data-depth="18" data-top="10"></svg></div>
+
+  <!-- 1. bare means -->
+  <section class="sec bare" id="bare" aria-labelledby="bare-h">
+    <div class="bare-head reveal">
+      <div>
+        <p class="eyebrow rv" data-i18n="bareK">What núda means</p>
+        <h2 class="h2 rv" id="bare-h" data-i18n="bareH">Everything else, left out.</h2>
+        <p class="lede rv" data-i18n="bareP">We kept what a good café needs and left out the rest.</p>
+      </div>
+      <p class="def rv"><b>núda</b> &nbsp;/ˈnuː.da/<br><span data-i18n="bareDef">bare, plain, with nothing added</span></p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ph part"><img src="assets/bare-counter.jpg" alt="" data-alt="alt1" loading="lazy" width="1080" height="900" style="object-position:74% 50%"></div>
+        <div class="part"><span class="num">01</span><h3 data-i18n="c1h">Good coffee</h3><p data-i18n="c1p">Espresso, freddos and flat whites, made properly every time. Drink it here or take it with you.</p></div>
+      </article>
+      <article class="card">
+        <div class="ph part"><img src="assets/bare-milk.jpg" alt="" data-alt="alt2" loading="lazy" width="1200" height="1500"></div>
+        <div class="part"><span class="num">02</span><h3 data-i18n="c2h">Your milk, your way</h3><p data-i18n="c2p">Cow's milk, soy or another plant milk. Or no milk at all.</p></div>
+      </article>
+      <article class="card">
+        <div class="ph part"><img src="assets/bare-corner.jpg" alt="" data-alt="alt3" loading="lazy" width="1200" height="1500"></div>
+        <div class="part"><span class="num">03</span><h3 data-i18n="c3h">A quiet corner</h3><p data-i18n="c3p">Right by the park, with tables outside. Bring a book, or just your morning.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <div class="awning on-panel" aria-hidden="true" style="background:var(--panel)"><svg class="scallop" data-depth="18" data-top="10" data-fill="milk"></svg></div>
+
+  <!-- 2. menu -->
+  <section class="sec menu-sec" id="menu" aria-labelledby="menu-h">
+    <div class="menu-grid">
+      <div class="pour" id="pour">
+        <p class="eyebrow" data-i18n="pourK">Try it</p>
+        <h3 data-i18n="pourH">How do you take it?</h3>
+        <div class="pour-body">
+          <div class="cup" aria-hidden="true">
+            <svg viewBox="0 0 200 300" id="cupsvg">
+              <defs><clipPath id="cupclip"><path d="M44 62 L156 62 L144 280 L56 280 Z"/></clipPath><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter></defs>
+              <rect class="stream" x="96" y="-30" width="8" height="112" rx="4"/>
+              <g clip-path="url(#cupclip)">
+                <rect class="coffee" x="30" y="78" width="140" height="210"/>
+                <g class="ice"><rect x="58" y="84" width="40" height="36" rx="7" transform="rotate(-8 78 102)"/><rect x="104" y="92" width="38" height="34" rx="7" transform="rotate(10 123 109)"/><rect x="70" y="128" width="36" height="32" rx="7" transform="rotate(14 88 144)"/></g>
+                <g filter="url(#soft)">
+                <ellipse class="cl" cx="100" cy="90" rx="34" ry="20" style="--i:0;--dy:20"/>
+                <ellipse class="cl" cx="86" cy="104" rx="30" ry="22" style="--i:1;--dy:70"/>
+                <ellipse class="cl" cx="116" cy="112" rx="28" ry="20" style="--i:2;--dy:110"/>
+                <ellipse class="cl" cx="94" cy="120" rx="36" ry="24" style="--i:3;--dy:140"/>
+                <ellipse class="cl" cx="108" cy="126" rx="30" ry="22" style="--i:4;--dy:120"/>
+                </g>
+                <text class="logo" x="100" y="200" text-anchor="middle">núda</text>
+              </g>
+              <path class="outline" d="M40 60 L160 60 L147 282 L53 282 Z"/>
+              <path class="outline" d="M38 60 L162 60" stroke-width="4"/>
+            </svg>
+          </div>
+          <ul class="milks" id="milks">
+            <li data-i18n="m1">Cow's milk</li>
+            <li data-i18n="m2">Soy</li>
+            <li data-i18n="m3">Other plant milks</li>
+            <li data-i18n="m4">No milk at all</li>
+          </ul>
+        </div>
+        <button type="button" class="holdbtn" id="holdbtn" aria-describedby="holdhint">
+          <svg class="hr" viewBox="0 0 48 48" aria-hidden="true"><circle class="t" cx="24" cy="24" r="20"/><circle class="f" cx="24" cy="24" r="20" pathLength="1"/></svg>
+          <span id="holdlbl">Hold to pour</span>
+        </button>
+        <p class="hint" id="holdhint" data-i18n="holdHint">Press and hold. Keyboard: hold Space or Enter.</p>
+        <p class="sr" aria-live="polite" id="pourlive"></p>
+      </div>
+
+      <div class="menu-list reveal">
+        <p class="eyebrow rv" data-i18n="menuK">What we pour</p>
+        <h2 class="h2 rv" id="menu-h" data-i18n="menuH">Simple menu, honest prices.</h2>
+        <div id="mgroups" class="rv"></div>
+        <div class="menu-foot rv">
+          <p data-i18n="menuP">Everything costs between €1 and €5. Ask at the counter for today's bakes.</p>
+          <a class="tlink" href="https://foody.com.cy/delivery/leykosia/nuda-coffee-kai-more-2000736849" target="_blank" rel="noopener" data-i18n="foody">Order delivery on Foody</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="awning" aria-hidden="true" style="background:var(--milk)"><svg class="scallop" data-depth="18" data-top="10" data-fill="panel"></svg></div>
+
+  <!-- 2b. from the counter (the café's own photos) -->
+  <section class="sec shop-sec" id="counter" aria-labelledby="shop-h">
+    <div class="shop-head reveal">
+      <div>
+        <p class="eyebrow rv" data-i18n="shopK">From the counter</p>
+        <h2 class="h2 rv" id="shop-h" data-i18n="shopH">Baked, squeezed, poured.</h2>
+      </div>
+      <div class="shop-side rv">
+        <p class="lede" data-i18n="shopP">Something to go with your coffee. Fresh every morning, while it lasts.</p>
+        <div class="arrows">
+          <button type="button" class="arr" id="shopPrev" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button type="button" class="arr" id="shopNext" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="shop-track reveal"><div class="shop rv" id="shop" tabindex="0" role="region" aria-labelledby="shop-h"></div></div>
+  </section>
+
+  <div class="awning" aria-hidden="true" style="background:var(--canvas)"><svg class="scallop" data-depth="18" data-top="10" data-fill="milk"></svg></div>
+
+  <!-- 3. hours -->
+  <section class="sec hours-sec" id="hours" aria-labelledby="hours-h">
+    <div class="hours-wrap reveal">
+      <div>
+        <p class="eyebrow rv" data-i18n="hoursK">Hours</p>
+        <p class="six rv" aria-hidden="true">6<sup>:00</sup><svg class="sunline" viewBox="0 0 300 14" preserveAspectRatio="none"><path pathLength="1" d="M2 9 C 60 2, 120 13, 180 6 S 280 4, 298 8"/></svg></p>
+        <h2 class="h2 rv" id="hours-h" data-i18n="hoursH">Mornings start at six.</h2>
+        <p class="lede rv" data-i18n="hoursP">The city is still quiet at six. The first coffee is already poured.</p>
+      </div>
+      <div class="board rv">
+        <p class="status" id="status"><i aria-hidden="true"></i><span id="statusTx"></span></p>
+        <ul id="hourlist"></ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="awning" aria-hidden="true" style="background:var(--milk)"><svg class="scallop" data-depth="18" data-top="10" data-fill="canvas"></svg></div>
+
+  <!-- 4. reviews -->
+  <section class="sec rev-sec" id="reviews" aria-labelledby="rev-h">
+    <div class="rev-wrap reveal">
+      <p class="eyebrow rv" data-i18n="revK">What people say</p>
+      <div class="score rv">
+        <h2 class="big" id="rev-h"><span class="sr" data-i18n="revSr">Rated 4.9 out of 5 on Google, from 51 reviews</span><span aria-hidden="true" id="scoreNum">4.9</span></h2>
+        <div class="st">
+          <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p data-i18n="revBig">out of 5 on Google, from 51 reviews. The word people use most: cozy.</p>
+        </div>
+      </div>
+      <div class="quotes rv" lang="en">
+        <figure class="quote"><p>“Love this place so much! Amazing coffee and vibes.”</p><footer>Kseniia</footer></figure>
+        <figure class="quote"><p>“Beautiful coffee spot next to the park, nice quiet location.”</p><footer>Azura</footer></figure>
+        <figure class="quote"><p>“Owners are fantastic! Very nice cozy place and good vibes.”</p><footer>George</footer></figure>
+        <figure class="quote"><p>“Fast and friendly service, the coffee is high quality, and the atmosphere is incredibly cozy.”</p><footer>Mario</footer></figure>
+      </div>
+      <a class="tlink rv" href="https://www.google.com/maps/place/Nuda+Coffee+%26+More/@35.1584324,33.3508647,17z/data=!4m8!3m7!1s0x14de19bdbb7d214d:0xb2dee445b87183a5!8m2!3d35.1584324!4d33.3508647!9m1!1b1" target="_blank" rel="noopener" data-i18n="revLink">Read all the reviews on Google</a>
+    </div>
+  </section>
+
+  <div class="awning" aria-hidden="true" style="background:var(--canvas)"><svg class="scallop" data-depth="18" data-top="10" data-fill="milk"></svg></div>
+
+  <!-- 5. faq -->
+  <section class="sec faq-sec" id="faq" aria-labelledby="faq-h">
+    <div class="faq-wrap reveal">
+      <div>
+        <p class="eyebrow rv" data-i18n="faqK">Questions</p>
+        <h2 class="h2 rv" id="faq-h" data-i18n="faqH">Good to know.</h2>
+      </div>
+      <div class="faq rv" id="faq-list"></div>
+    </div>
+  </section>
+
+  <div class="awning" aria-hidden="true" style="background:var(--milk)"><svg class="scallop" data-depth="18" data-top="10" data-fill="canvas"></svg></div>
+
+  <!-- 6. visit -->
+  <section class="sec visit-sec" id="visit" aria-labelledby="visit-h">
+    <div class="visit reveal">
+      <div class="img rv"><img src="assets/hero-ending.jpg" alt="" data-alt="altEnd" loading="lazy" width="1920" height="1080"></div>
+      <div>
+        <p class="eyebrow rv" data-i18n="visitK">Visit</p>
+        <h2 class="h2 rv" id="visit-h" data-i18n="visitH">See you at six.</h2>
+        <address class="addr rv"><b data-i18n="addr1">Agion Omologiton 101</b><br><span data-i18n="addr2">1080 Nicosia, Cyprus</span></address>
+        <p class="note rv" data-i18n="visitP">Right by the park. Look for the white awning.</p>
+        <div class="row rv">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nuda+Coffee+%26+More%2C+Agion+Omologiton+101%2C+Nicosia" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="ctaDir">Get directions</span></a>
+          <a class="btn ghost" href="tel:+35722254007"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="ctaCall">Call 22 254007</span></a>
+        </div>
+        <p class="small rv"><span data-i18n="visitOr">Staying in?</span> <a class="tlink" href="https://foody.com.cy/delivery/leykosia/nuda-coffee-kai-more-2000736849" target="_blank" rel="noopener" data-i18n="foody">Order delivery on Foody</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <a class="mark" href="#top" aria-label="núda Coffee &amp; More, back to top"><b>núda</b><i>COFFEE &amp; MORE</i></a>
+    <div><h4 data-i18n="fAddrH">Find us</h4><p><span data-i18n="addr1">Agion Omologiton 101</span><br><span data-i18n="addr2">1080 Nicosia, Cyprus</span></p></div>
+    <div><h4 data-i18n="fHoursH">Hours</h4><p><span data-i18n="fH1">Mon to Fri · 6:00 to 17:00</span><br><span data-i18n="fH2">Sat · 6:00 to 15:00</span><br><span data-i18n="fH3">Sun · closed</span></p></div>
+    <div><h4 data-i18n="fCallH">Call</h4><p><a href="tel:+35722254007">+357 22 254007</a><br><a href="https://foody.com.cy/delivery/leykosia/nuda-coffee-kai-more-2000736849" target="_blank" rel="noopener">Foody</a></p></div>
+  </div>
+  <div class="foot-base"><span>© 2026 núda Coffee &amp; More</span><a href="#top" data-i18n="top">Back to top</a></div>
+</footer>
+
+<script>
+(() => {
+'use strict';
+
+/* ================= copy (ships verbatim) ================= */
+const T = {
+  en: {
+    skip:'Skip to content', navMenu:'Menu', navHours:'Hours', navVisit:'Visit', navDir:'Directions', cue:'Scroll',
+    b1k:'Agion Omologiton · Nicosia',
+    b1h:'Coffee, bare.', b1s:'Good beans. Cold milk. Nothing extra.',
+    b2h:'Open at six.', b2s:'A quiet corner by the park, before the city wakes up.',
+    b3h:'Come as you are.', b3s:'Monday to Friday 6:00 to 17:00. Saturday 6:00 to 15:00.',
+    ctaDir:'Get directions', ctaCall:'Call 22 254007',
+    stS:'Good coffee from six in the morning, in a quiet corner by the park. Come as you are.',
+    bareK:'What núda means', bareH:'Everything else, left out.', bareP:'We kept what a good café needs and left out the rest.',
+    bareDef:'bare, plain, with nothing added',
+    c1h:'Good coffee', c1p:'Espresso, freddos and flat whites, made properly every time. Drink it here or take it with you.',
+    c2h:'Your milk, your way', c2p:"Cow's milk, soy or another plant milk. Or no milk at all.",
+    c3h:'A quiet corner', c3p:'Right by the park, with tables outside. Bring a book, or just your morning.',
+    alt1:'A núda takeaway cup on the counter, the espresso machine behind it',
+    alt2:'Cold milk poured from a small jug, beside a cup of coffee',
+    alt3:'A coffee on a small table outside, in the shade of a tree',
+    altEnd:'An iced coffee in a núda takeaway cup, marbled with milk, on an oak counter',
+    pourK:'Try it', pourH:'How do you take it?',
+    m1:"Cow's milk", m2:'Soy', m3:'Other plant milks', m4:'No milk at all',
+    hold:'Hold to pour', holding:'Keep holding', held:'Yours, however you take it.',
+    holdHint:'Press and hold. Keyboard: hold Space or Enter.',
+    menuK:'What we pour', menuH:'Simple menu, honest prices.',
+    menuP:'Starting prices. Any coffee comes with soy or another plant milk, just ask.',
+    foody:'Order delivery on Foody',
+    groups:[
+      ['Hot coffee', [['Espresso',1.7],['Americano',2.7],['Cappuccino',3],['Latte',3],['Flat white',3],['Mocha',3.4],['Filter coffee',3.8],['Nescafé',2.7]]],
+      ['Iced coffee', [['Freddo espresso',2.9],['Freddo cappuccino',3],['Iced americano',2.7],['Iced latte',3],['Iced flat white',3],['Iced mocha',3.4],['Frappé',2.7],['Cold brew',4]]],
+      ['No coffee', [['Matcha, hot or iced',4],['Hot chocolate',3.4],['Tea',2.7],['Iced tea',2.7],['Fresh orange juice',3.7],['Fresh lemonade',3],['Mint lemonade',3.2]]],
+      ['From the oven', [['Butter croissant',2.2],['Chocolate croissant',2.2],['Blueberry & cheese muffin',2.9],['Chocolate muffin',2.9],['Halloumi pie',2.5],['Spinach & feta pie',2.8],['Cheese pie',2.5],['Olive pie',2.9],['Tahini pie',2.5]]]
+    ],
+    shopK:'From the counter', shopH:'Baked, squeezed, poured.',
+    shopP:'Something to go with your coffee. Fresh every morning, while it lasts.',
+    shop:[
+      ['shop-cookies-dark.jpg','Dark chocolate cookies','For the ones who like it dark.',0],
+      ['shop-muffin.jpg','Blueberry & cheese muffin','Soft inside, crumble on top.',2.9],
+      ['shop-orange.jpg','Fresh orange juice','Squeezed, bottled, cold.',3.7],
+      ['shop-cookies.jpg','Cookies','Chocolate chip, candy, double chocolate.',0],
+      ['shop-matcha.jpg','Matcha','Whisked to order, hot or iced.',4],
+      ['shop-berry.jpg','Red berry juice','Deep, cold and a little tart.',0]
+    ],
+    hoursK:'Hours', hoursH:'Mornings start at six.', hoursP:'The city is still quiet at six. The first coffee is already poured.',
+    days:['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], closed:'Closed',
+    wk:'6:00 to 17:00', sat:'6:00 to 15:00',
+    stOpen:'Open now, until ', stLater:'Opens today at 6:00', stTomorrow:'Closed now. Opens tomorrow at 6:00',
+    stMonday:'Closed now. Back on Monday at 6:00',
+    revK:'What people say', revSr:'Rated 4.9 out of 5 on Google, from 51 reviews',
+    revBig:'out of 5 on Google, from 51 reviews. The word people use most: cozy.',
+    revLink:'Read all the reviews on Google',
+    faqK:'Questions', faqH:'Good to know.',
+    faq:[
+      ['Do you have plant milk?','Yes. Soy and other plant milks, for any coffee on the menu. Just ask.'],
+      ['Can I take my coffee away?','Yes. Everything on the menu comes in a takeaway cup too.'],
+      ['Can I sit outside?','Yes. We have tables outside, right by the park.'],
+      ['Do you deliver?','Yes, through Foody. Search for núda Coffee & More in the app.'],
+      ['Is there something to eat?','Croissants, muffins, cookies and Cypriot pies: halloumi, spinach and feta, cheese, olive or tahini.'],
+      ['Are you open on Sunday?','No, Sunday is our day off. We open again on Monday at 6:00.']
+    ],
+    visitK:'Visit', visitH:'See you at six.', addr1:'Agion Omologiton 101', addr2:'1080 Nicosia, Cyprus',
+    visitP:'Right by the park. Look for the white awning.', visitOr:'Staying in?',
+    fAddrH:'Find us', fHoursH:'Hours', fCallH:'Call',
+    fH1:'Mon to Fri · 6:00 to 17:00', fH2:'Sat · 6:00 to 15:00', fH3:'Sun · closed',
+    top:'Back to top'
+  },
+  el: {
+    skip:'Μετάβαση στο περιεχόμενο', navMenu:'Μενού', navHours:'Ωράριο', navVisit:'Επίσκεψη', navDir:'Οδηγίες', cue:'Κύλιση',
+    b1k:'Αγίων Ομολογητών · Λευκωσία',
+    b1h:'Καφές, σκέτος.', b1s:'Καλός κόκκος. Κρύο γάλα. Τίποτα περιττό.',
+    b2h:'Ανοιχτά από τις έξι.', b2s:'Μια ήσυχη γωνιά δίπλα στο πάρκο, πριν ξυπνήσει η πόλη.',
+    b3h:'Έλα όπως είσαι.', b3s:'Δευτέρα με Παρασκευή 6:00 με 17:00. Σάββατο 6:00 με 15:00.',
+    ctaDir:'Οδηγίες', ctaCall:'Κλήση 22 254007',
+    stS:'Καλός καφές από τις έξι το πρωί, σε μια ήσυχη γωνιά δίπλα στο πάρκο. Έλα όπως είσαι.',
+    bareK:'Τι σημαίνει núda', bareH:'Τα περιττά, έξω.', bareP:'Κρατήσαμε ό,τι χρειάζεται ένα καλό καφέ και αφήσαμε έξω τα υπόλοιπα.',
+    bareDef:'γυμνό, σκέτο, χωρίς τίποτα παραπάνω',
+    c1h:'Καλός καφές', c1p:'Espresso, freddo και flat white, φτιαγμένα σωστά κάθε φορά. Πιες τον εδώ ή πάρ᾽ τον μαζί σου.',
+    c2h:'Το γάλα που θέλεις', c2p:'Αγελαδινό, σόγιας ή άλλο φυτικό γάλα. Ή καθόλου γάλα.',
+    c3h:'Μια ήσυχη γωνιά', c3p:'Δίπλα στο πάρκο, με τραπέζια έξω. Φέρε ένα βιβλίο ή απλώς το πρωινό σου.',
+    alt1:'Ένα ποτήρι núda στον πάγκο, με τη μηχανή espresso πίσω του',
+    alt2:'Κρύο γάλα από μικρή κανάτα, δίπλα σε ένα φλιτζάνι καφέ',
+    alt3:'Ένας καφές σε τραπεζάκι έξω, στη σκιά ενός δέντρου',
+    altEnd:'Ένας κρύος καφές σε ποτήρι núda, με γάλα, πάνω σε δρύινο πάγκο',
+    pourK:'Δοκίμασε', pourH:'Πώς τον πίνεις;',
+    m1:'Αγελαδινό', m2:'Σόγιας', m3:'Άλλο φυτικό γάλα', m4:'Χωρίς γάλα',
+    hold:'Κράτα πατημένο για να σερβίρεις', holding:'Συνέχισε', held:'Δικός σου, όπως τον θέλεις.',
+    holdHint:'Πάτα παρατεταμένα. Πληκτρολόγιο: κράτα πατημένο το Space ή το Enter.',
+    menuK:'Τι σερβίρουμε', menuH:'Απλό μενού, τίμιες τιμές.',
+    menuP:'Τιμές από. Κάθε καφές γίνεται με σόγια ή άλλο φυτικό γάλα, απλώς ζήτα το.',
+    foody:'Παράγγειλε με Foody',
+    groups:[
+      ['Ζεστός καφές', [['Espresso',1.7],['Americano',2.7],['Cappuccino',3],['Latte',3],['Flat white',3],['Mocha',3.4],['Καφές φίλτρου',3.8],['Νες',2.7]]],
+      ['Κρύος καφές', [['Freddo espresso',2.9],['Freddo cappuccino',3],['Iced americano',2.7],['Iced latte',3],['Iced flat white',3],['Iced mocha',3.4],['Φραπέ',2.7],['Cold brew',4]]],
+      ['Χωρίς καφέ', [['Matcha, ζεστό ή κρύο',4],['Ζεστή σοκολάτα',3.4],['Τσάι',2.7],['Κρύο τσάι',2.7],['Φρέσκος χυμός πορτοκάλι',3.7],['Φρέσκια λεμονάδα',3],['Λεμονάδα με δυόσμο',3.2]]],
+      ['Από τον φούρνο', [['Κρουασάν βουτύρου',2.2],['Κρουασάν σοκολάτας',2.2],['Muffin μύρτιλο & τυρί',2.9],['Muffin σοκολάτας',2.9],['Χαλλουμόπιτα',2.5],['Σπανακόπιτα με φέτα',2.8],['Τυρόπιτα',2.5],['Ελιόπιτα',2.9],['Ταχινόπιτα',2.5]]]
+    ],
+    shopK:'Από τον πάγκο', shopH:'Ψημένα, στυμμένα, σερβιρισμένα.',
+    shopP:'Κάτι για να συνοδεύσει τον καφέ σου. Φρέσκα κάθε πρωί, όσο κρατήσουν.',
+    shop:[
+      ['shop-cookies-dark.jpg','Cookies σοκολάτας','Για όσους αγαπούν τη σοκολάτα χωρίς συμβιβασμούς.',0],
+      ['shop-muffin.jpg','Muffin μύρτιλο & τυρί','Αφράτο μέσα, τραγανό από πάνω.',2.9],
+      ['shop-orange.jpg','Φρέσκος χυμός πορτοκάλι','Στυμμένος, εμφιαλωμένος, κρύος.',3.7],
+      ['shop-cookies.jpg','Cookies','Με κομμάτια σοκολάτας, κουφετάκια, διπλή σοκολάτα.',0],
+      ['shop-matcha.jpg','Matcha','Χτυπημένο τη στιγμή της παραγγελίας, ζεστό ή κρύο.',4],
+      ['shop-berry.jpg','Χυμός κόκκινων φρούτων','Βαθύς, κρύος και λίγο ξινός.',0]
+    ],
+    hoursK:'Ωράριο', hoursH:'Το πρωί ξεκινά στις έξι.', hoursP:'Στις έξι η πόλη είναι ακόμα ήσυχη. Ο πρώτος καφές έχει ήδη σερβιριστεί.',
+    days:['Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο','Κυριακή'], closed:'Κλειστά',
+    wk:'6:00 με 17:00', sat:'6:00 με 15:00',
+    stOpen:'Ανοιχτά τώρα, έως τις ', stLater:'Ανοίγουμε σήμερα στις 6:00', stTomorrow:'Κλειστά τώρα. Ανοίγουμε αύριο στις 6:00',
+    stMonday:'Κλειστά τώρα. Τα λέμε τη Δευτέρα στις 6:00',
+    revK:'Τι λένε για εμάς', revSr:'Βαθμολογία 4,9 στα 5 στο Google, από 51 κριτικές',
+    revBig:'στα 5 στο Google, από 51 κριτικές. Η λέξη που λένε πιο συχνά: cozy.',
+    revLink:'Διάβασε όλες τις κριτικές στο Google',
+    faqK:'Ερωτήσεις', faqH:'Καλό να ξέρεις.',
+    faq:[
+      ['Έχετε φυτικό γάλα;','Ναι. Σόγιας και άλλα φυτικά γάλατα, για κάθε καφέ του μενού. Απλώς ζήτα το.'],
+      ['Μπορώ να πάρω τον καφέ μου σε πακέτο;','Ναι. Όλα τα ροφήματα του μενού έρχονται και σε ποτήρι για έξω.'],
+      ['Μπορώ να καθίσω έξω;','Ναι. Έχουμε τραπέζια έξω, δίπλα στο πάρκο.'],
+      ['Κάνετε delivery;','Ναι, μέσω Foody. Ψάξε núda Coffee & More στην εφαρμογή.'],
+      ['Έχετε κάτι να φάω;','Κρουασάν, muffins, cookies και πίτες: χαλλουμόπιτα, σπανακόπιτα, τυρόπιτα, ελιόπιτα ή ταχινόπιτα.'],
+      ['Είστε ανοιχτά την Κυριακή;','Όχι, την Κυριακή ξεκουραζόμαστε. Ανοίγουμε ξανά τη Δευτέρα στις 6:00.']
+    ],
+    visitK:'Επίσκεψη', visitH:'Τα λέμε στις έξι.', addr1:'Αγίων Ομολογητών 101', addr2:'1080 Λευκωσία, Κύπρος',
+    visitP:'Δίπλα στο πάρκο. Ψάξε την άσπρη τέντα.', visitOr:'Μένεις σπίτι;',
+    fAddrH:'Βρες μας', fHoursH:'Ωράριο', fCallH:'Κλήση',
+    fH1:'Δευ έως Παρ · 6:00 με 17:00', fH2:'Σάβ · 6:00 με 15:00', fH3:'Κυρ · κλειστά',
+    top:'Επιστροφή στην αρχή'
+  }
+};
+
+/* ================= helpers ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+const smoothstep = (p, e0, e1) => { const t = clamp((p - e0) / (e1 - e0), 0, 1); return t * t * (3 - 2 * t); };
+const rng = seed => { let s = seed >>> 0; return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RM = matchMedia('(prefers-reduced-motion: reduce)');
+let lang = 'en';
+try { const s = localStorage.getItem('nuda-lang'); if (s === 'en' || s === 'el') lang = s; else if ((navigator.language || '').toLowerCase().startsWith('el')) lang = 'el'; } catch (e) {}
+
+/* ================= the awning scallops (signature) ================= */
+const FILLS = {milk:'#FBF9F5', canvas:'#F3F0EA', panel:'#E9E3D9'};
+function drawScallops() {
+  $$('svg.scallop').forEach(svg => {
+    const w = Math.max(1, Math.round(svg.getBoundingClientRect().width));
+    const h = Math.max(1, Math.round(svg.getBoundingClientRect().height));
+    if (svg._w === w && svg._h === h) return;
+    svg._w = w; svg._h = h;
+    const top = parseFloat(svg.dataset.top || '0');
+    const depth = Math.min(parseFloat(svg.dataset.depth || '14'), h - top - 2);
+    const n = Math.max(4, Math.round(w / (depth * 4.2)));
+    const sw = w / n;
+    let arcs = '';
+    for (let i = 0; i < n; i++) arcs += ` a ${(sw / 2).toFixed(2)} ${depth} 0 0 0 ${sw.toFixed(2)} 0`;
+    const fill = FILLS[svg.dataset.fill || 'milk'];
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    svg.setAttribute('preserveAspectRatio', 'none');
+    svg.innerHTML = `<path class="fab" style="fill:${fill}" d="M0 0 L0 ${top}${arcs} L${w} 0 Z"/><path class="edge" pathLength="1" d="M0 ${top}${arcs}"/>`;
+    if (svg.closest('.nav')) { svg.querySelector('.edge').style.strokeDashoffset = 0; svg.querySelector('.edge').style.cssText += ';fill:none;stroke:#2B2E31;stroke-width:2'; }
+  });
+}
+drawScallops();
+let scT = null;
+addEventListener('resize', () => { clearTimeout(scT); scT = setTimeout(drawScallops, 150); }, {passive: true});
+
+/* ================= split text for the hero bands ================= */
+function split(el, text, fx, seed) {
+  const r = rng(seed);
+  const words = text.split(' ');
+  const total = text.replace(/ /g, '').length;
+  let ci = 0;
+  const build = cls => {
+    const vis = document.createElement('span');
+    vis.className = 'vis ' + cls;
+    vis.setAttribute('aria-hidden', 'true');
+    words.forEach((w, wi) => {
+      const ws = document.createElement('span');
+      ws.className = 'w';
+      if (fx === 'drift' || fx === 'rise') ws.style.setProperty('--th', (wi / Math.max(1, words.length)) * 0.5 + r() * 0.05);
+      [...w].forEach(ch => {
+        const c = document.createElement('span');
+        c.className = 'c';
+        c.textContent = ch;
+        if (fx === 'cloud' && cls === 'sharp') {
+          c.style.setProperty('--th', (ci / total) * 0.4 + r() * 0.12);
+          c.style.setProperty('--jy', (-12 - r() * 26).toFixed(1) + 'px');
+        }
+        ci++;
+        ws.appendChild(c);
+      });
+      vis.appendChild(ws);
+      if (wi < words.length - 1) vis.appendChild(document.createTextNode(' '));
+    });
+    return vis;
+  };
+  el.textContent = '';
+  const sr = document.createElement('span');
+  sr.className = 'sr';
+  sr.textContent = text;
+  el.appendChild(sr);
+  el.classList.add('fx-' + fx);
+  if (fx === 'cloud') { el.appendChild(build('soft')); ci = 0; el.appendChild(build('sharp')); }
+  else el.appendChild(build(''));
+}
+
+/* ================= language ================= */
+function applyLang() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  $$('[data-i18n]').forEach(el => { const v = t[el.dataset.i18n]; if (typeof v === 'string') el.textContent = v; });
+  $$('[data-alt]').forEach(el => { el.alt = t[el.dataset.alt]; });
+  $$('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+  $$('[data-split]').forEach((el, i) => split(el, t[el.dataset.split], el.dataset.fx, 211 + i * 37));
+  $('#scoreNum').textContent = lang === 'el' ? '4,9' : '4.9';
+  renderMenu(); renderShop(); renderFaq(); renderHours();
+  $('#holdlbl').textContent = pourP >= 1 ? t.held : t.hold;
+  bands.forEach(b => { b.op = -1; b.k = -1; });
+  if (scrubOn) updateCaptions(shown); else pinBands();
+}
+$$('.lang button').forEach(b => b.addEventListener('click', () => {
+  lang = b.dataset.lang;
+  try { localStorage.setItem('nuda-lang', lang); } catch (e) {}
+  applyLang();
+}));
+
+/* ================= menu, faq, hours ================= */
+const fmtPrice = p => { const s = p.toFixed(2); return '€' + (lang === 'el' ? s.replace('.', ',') : s); };
+function renderMenu() {
+  $('#mgroups').innerHTML = T[lang].groups.map(([g, items]) =>
+    `<div class="mgroup"><h3>${esc(g)}</h3><ul>${items.map(([n, p]) => `<li><span>${esc(n)}</span><small>${fmtPrice(p)}</small></li>`).join('')}</ul></div>`
+  ).join('');
+}
+function renderShop() {
+  $('#shop').innerHTML = T[lang].shop.map(([img, n, d, p], i) =>
+    `<figure class="item" style="--i:${i}"><div class="ph"><img src="assets/${img}" alt="${esc(n)}" loading="lazy" width="1080" height="1080"></div><figcaption><span class="nm">${esc(n)}</span>${p ? `<span class="pr">${fmtPrice(p)}</span>` : ''}<span class="ds">${esc(d)}</span></figcaption></figure>`
+  ).join('');
+}
+function renderFaq() {
+  $('#faq-list').innerHTML = T[lang].faq.map(([q, a]) => `<details><summary>${esc(q)}<span class="pm" aria-hidden="true"></span></summary><p>${esc(a)}</p></details>`).join('');
+}
+function nicosiaNow() {
+  const parts = new Intl.DateTimeFormat('en-GB', {timeZone:'Asia/Nicosia', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false}).formatToParts(new Date());
+  const get = k => (parts.find(p => p.type === k) || {}).value;
+  const wd = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(get('weekday'));
+  return {day: wd, mins: (parseInt(get('hour'), 10) % 24) * 60 + parseInt(get('minute'), 10)};
+}
+function renderHours() {
+  const t = T[lang];
+  const now = nicosiaNow();
+  $('#hourlist').innerHTML = t.days.map((d, i) => `<li class="${i === now.day ? 'today' : ''}"><span>${d}</span><span>${i === 6 ? t.closed : (i === 5 ? t.sat : t.wk)}</span></li>`).join('');
+  const OPEN = 6 * 60, CLOSE = now.day === 5 ? 15 * 60 : 17 * 60;
+  let txt, open = false;
+  if (now.day === 6) txt = t.stMonday;
+  else if (now.mins >= OPEN && now.mins < CLOSE) { txt = t.stOpen + (now.day === 5 ? '15:00' : '17:00'); open = true; }
+  else if (now.mins < OPEN) txt = t.stLater;
+  else txt = now.day === 5 ? t.stMonday : t.stTomorrow;
+  $('#status').classList.toggle('open', open);
+  $('#statusTx').textContent = txt;
+}
+setInterval(renderHours, 60000);
+const shopEl = $('#shop');
+const shopStep = dir => { const it = shopEl.querySelector('.item'); const w = it ? it.getBoundingClientRect().width + 24 : 300; shopEl.scrollBy({left: dir * w, behavior: RM.matches ? 'auto' : 'smooth'}); };
+$('#shopPrev').addEventListener('click', () => shopStep(-1));
+$('#shopNext').addEventListener('click', () => shopStep(1));
+
+/* ================= reveal on view, retire stagger, pause off-screen loops ================= */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    e.target.classList.add('in');
+    setTimeout(() => e.target.classList.add('done'), 1700);
+    io.unobserve(e.target);
+  }
+}), {threshold: 0.16, rootMargin: '0px 0px -8% 0px'});
+$$('.reveal, .card, .awning').forEach(el => io.observe(el));
+const pio = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('paused-sec', !e.isIntersecting)));
+$$('section.sec, .env').forEach(el => pio.observe(el));
+document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
+
+/* ================= nav turns into the awning after the hero ================= */
+const nav = $('#nav');
+let navSolid = null;
+function updateNav() {
+  const solid = scrubOn ? (scrollY > innerHeight * 0.9 && scrollY >= heroEnd() - innerHeight * 0.4) : scrollY > 40;
+  if (solid !== navSolid) { navSolid = solid; nav.classList.toggle('solid', solid); if (solid) drawScallops(); }
+}
+addEventListener('scroll', updateNav, {passive: true});
+
+/* ================= the hold-to-pour moment ================= */
+const pour = $('#pour'), cupsvg = $('#cupsvg'), holdbtn = $('#holdbtn'), milkItems = $$('#milks li');
+let pourP = 0, holding = false, pourRaf = null, pourLast = 0, lastPourWrite = -1, lastLit = -1;
+function writePour() {
+  if (Math.abs(pourP - lastPourWrite) < 0.004 && pourP !== 1 && pourP !== 0) return;
+  lastPourWrite = pourP;
+  cupsvg.style.setProperty('--p', pourP.toFixed(3));
+  holdbtn.style.setProperty('--p', pourP.toFixed(3));
+  const lit = Math.floor(pourP * 4.0001);
+  if (lit !== lastLit) { lastLit = lit; milkItems.forEach((li, i) => li.classList.toggle('lit', i < lit)); }
+}
+function completePour() {
+  pourP = 1; writePour();
+  holding = false;
+  pour.classList.remove('pouring');
+  pour.classList.add('done');
+  $('#holdlbl').textContent = T[lang].held;
+  $('#pourlive').textContent = T[lang].held;
+}
+function pourTick(now) {
+  const dt = Math.min(100, now - (pourLast || now)); pourLast = now;
+  if (holding) pourP = Math.min(1, pourP + dt / 2200);
+  else pourP = Math.max(0, pourP - (dt / 1000) * (0.3 + pourP * 0.8));   // eases back, never snaps
+  writePour();
+  if (pourP >= 1) { completePour(); pourRaf = null; pourLast = 0; return; }
+  if (!holding && pourP <= 0) { pourRaf = null; pourLast = 0; $('#holdlbl').textContent = T[lang].hold; return; }
+  pourRaf = requestAnimationFrame(pourTick);
+}
+function startHold() {
+  if (pour.classList.contains('done')) return;
+  if (RM.matches) { completePour(); return; }
+  holding = true;
+  pour.classList.add('pouring');
+  $('#holdlbl').textContent = T[lang].holding;
+  if (!pourRaf) pourRaf = requestAnimationFrame(pourTick);
+}
+function endHold() {
+  if (!holding) return;
+  holding = false;
+  pour.classList.remove('pouring');
+  if (!pourRaf && pourP < 1) pourRaf = requestAnimationFrame(pourTick);
+}
+holdbtn.addEventListener('pointerdown', e => { e.preventDefault(); try { holdbtn.setPointerCapture(e.pointerId); } catch (_) {} startHold(); });
+['pointerup', 'pointercancel', 'lostpointercapture'].forEach(ev => holdbtn.addEventListener(ev, endHold));
+holdbtn.addEventListener('contextmenu', e => e.preventDefault());
+holdbtn.addEventListener('keydown', e => { if ((e.key === ' ' || e.key === 'Enter') && !e.repeat) { e.preventDefault(); startHold(); } });
+holdbtn.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); endHold(); } });
+holdbtn.addEventListener('click', e => { if (e.detail === 0 && RM.matches) completePour(); });
+
+/* ================= the scroll-scrubbed hero ================= */
+const stage = $('#stage'), video = $('#hero'), vwrap = $('#vwrap'), posterLayer = $('#poster'), hero = $('#top'), cue = $('#cue'), ring = $('#ring');
+const VIDEO_URL = 'assets/hero-scrub.mp4';
+const POSTER_URL = 'assets/hero-poster.jpg';
+const VIDEO_BYTES = 2818488;
+const ZOOM = 0;   // no extra push-in: the footage already pushes in, and scaling softens it
+const bands = $$('.band').map((el, i, arr) => ({
+  el, a: parseFloat(el.dataset.a), b: parseFloat(el.dataset.b), ramp: el.dataset.ramp ? parseFloat(el.dataset.ramp) : null,
+  first: i === 0, last: i === arr.length - 1, op: -1, k: -1, live: null
+}));
+const heroEnd = () => hero.offsetTop + hero.offsetHeight;
+function heroProgress() {
+  const range = hero.offsetHeight - innerHeight;
+  return range > 0 ? clamp((scrollY - hero.offsetTop) / range, 0, 1) : 0;
+}
+let target = 0, shown = 0, rafId = null, lastTick = 0, heroOnScreen = true, loadK = 0, loadStart = 0, lastZoom = -1, cueGone = null;
+
+function updateCaptions(p) {
+  for (const b of bands) {
+    const f = Math.min(0.02, (b.b - b.a) / 3);
+    const inO = b.first ? 1 : smoothstep(p, b.a, b.a + f);
+    const outO = b.last ? 0 : smoothstep(p, b.b - f, b.b);
+    const op = inO * (1 - outO);
+    const ramp = b.ramp || Math.min(0.025, (b.b - b.a) * 0.35);
+    let k = clamp((p - b.a) / ramp, 0, 1);
+    if (b.first) k = Math.max(k, loadK);
+    if (b.last) k = clamp((p - b.a) / ((b.b - b.a) * 0.5), 0, 1);
+    if (Math.abs(op - b.op) > 0.004 || (op === 0) !== (b.op === 0) || (op === 1 && b.op !== 1)) { b.op = op; b.el.style.opacity = op.toFixed(3); }
+    if (Math.abs(k - b.k) > 0.008 || (k === 1 && b.k !== 1) || (k === 0 && b.k !== 0)) {
+      b.k = k;
+      b.el.style.setProperty('--k', k.toFixed(3));
+      if (b.last) {
+        b.el.style.setProperty('--ks', clamp((k - 0.62) * 4, 0, 1).toFixed(3));
+        b.el.style.setProperty('--kb', clamp((k - 0.76) * 5, 0, 1).toFixed(3));
+      } else {
+        b.el.style.setProperty('--ks', clamp((k - 0.45) * 2.4, 0, 1).toFixed(3));
+      }
+    }
+    const live = op > 0.5;
+    if (live !== b.live) { b.live = live; b.el.classList.toggle('live', live); b.el.toggleAttribute('inert', !live); }
+  }
+  const z = 1 + ZOOM * p;
+  if (Math.abs(z - lastZoom) > 0.0004) { lastZoom = z; vwrap.style.transform = `scale(${z.toFixed(4)})`; }
+  const g = p > 0.03;
+  if (g !== cueGone) { cueGone = g; cue.classList.toggle('gone', g); }
+}
+
+let seekBusy = false, pendingTime = null;
+function requestSeek(t) {
+  if (!video.duration || !isFinite(video.duration)) return;
+  t = clamp(t, 0, video.duration - 0.04);
+  if (seekBusy) { pendingTime = t; return; }
+  if (Math.abs(video.currentTime - t) < 0.008) return;
+  seekBusy = true;
+  video.currentTime = t;
+}
+video.addEventListener('seeked', () => {
+  seekBusy = false;
+  if (pendingTime !== null) { const t = pendingTime; pendingTime = null; requestSeek(t); }
+});
+video.addEventListener('error', () => { seekBusy = false; pendingTime = null; failVideo(); });
+
+function tick(now) {
+  const dt = Math.min(100, now - (lastTick || now));
+  lastTick = now;
+  shown += (target - shown) * (1 - Math.pow(1 - 0.16, dt / 16.667));
+  let busy = false;
+  if (loadK < 1) {
+    if (!loadStart) loadStart = now;
+    const t = clamp((now - loadStart) / 1500, 0, 1);
+    loadK = 1 - Math.pow(1 - t, 3);
+    busy = true;
+  }
+  if (Math.abs(target - shown) < 0.0005) shown = target; else busy = true;
+  requestSeek(shown * (video.duration || 0));
+  updateCaptions(shown);
+  if (busy && scrubOn) rafId = requestAnimationFrame(tick);
+  else { rafId = null; lastTick = 0; }
+}
+function kick() { if (rafId === null && scrubOn) rafId = requestAnimationFrame(tick); }
+function onScroll() {
+  target = heroProgress();
+  if (heroOnScreen) kick();
+}
+new IntersectionObserver(es => { heroOnScreen = es[0].isIntersecting; if (heroOnScreen) onScroll(); }).observe(hero);
+
+function makeScrollChevron() {
+  const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('class', 'chev'); s.setAttribute('aria-hidden', 'true');
+  s.innerHTML = '<path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+  return s;
+}
+function failVideo() {
+  if (stage.classList.contains('video-failed')) return;
+  if (ring.isConnected) ring.replaceWith(makeScrollChevron());
+  stage.classList.add('video-failed');
+}
+let heroInit = false;
+function initHeroOnce() {
+  if (heroInit) return; heroInit = true;
+  posterLayer.style.backgroundImage = `url('${POSTER_URL}')`;
+  let started = false;
+  const start = () => { if (started) return; started = true; loadHeroBlob().catch(failVideo); };
+  const img = new Image(); img.onload = start; img.onerror = start; img.src = POSTER_URL;
+  setTimeout(start, 4000);
+}
+async function loadHeroBlob() {
+  const ctrl = new AbortController();
+  let watchdog = setTimeout(() => ctrl.abort(), 20000);
+  const res = await fetch(VIDEO_URL, {priority: 'low', signal: ctrl.signal});
+  if (!res.ok) throw new Error('video ' + res.status);
+  const total = Number(res.headers.get('Content-Length')) || VIDEO_BYTES;
+  let blob;
+  if (res.body && res.body.getReader) {
+    const reader = res.body.getReader();
+    const chunks = []; let got = 0, lastRing = 0;
+    for (;;) {
+      const {done, value} = await reader.read();
+      if (done) break;
+      clearTimeout(watchdog); watchdog = setTimeout(() => ctrl.abort(), 20000);
+      chunks.push(value); got += value.length;
+      const frac = Math.min(1, got / total), now = performance.now();
+      if (now - lastRing > 100 || frac === 1) { lastRing = now; ring.style.setProperty('--ld', Math.round(126 * (1 - frac))); }
+    }
+    blob = new Blob(chunks, {type: 'video/mp4'});
+  } else blob = await res.blob();
+  clearTimeout(watchdog);
+  ring.style.setProperty('--ld', 0);
+  video.src = URL.createObjectURL(blob);
+  video.load();
+  video.addEventListener('loadeddata', () => {
+    requestSeek(heroProgress() * video.duration);
+    stage.classList.add('video-ready');
+    setTimeout(() => { if (ring.isConnected) ring.replaceWith(makeScrollChevron()); }, 700);
+  }, {once: true});
+}
+
+/* five static-hero gates, identical to the CSS */
+const GATES = [
+  '(max-width: 720px)',
+  '(orientation: portrait) and (max-width: 1024px)',
+  '(orientation: portrait) and (pointer: coarse)',
+  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)',
+  '(prefers-reduced-motion: reduce)'
+];
+let scrubOn = false, reducedPinned = false;
+function pinBands() { bands.forEach(b => { b.el.style.setProperty('--k', 1); b.el.style.setProperty('--ks', 1); b.el.style.setProperty('--kb', 1); }); }
+function enableScrub() {
+  if (scrubOn) return; scrubOn = true;
+  initHeroOnce();
+  addEventListener('scroll', onScroll, {passive: true});
+  bands.forEach(b => { b.op = -1; b.k = -1; b.live = null; });
+  unpinFinalStates();
+  updateCaptions(heroProgress());
+  onScroll();
+  kick();
+}
+function disableScrub() {
+  if (!scrubOn) return; scrubOn = false;
+  removeEventListener('scroll', onScroll);
+  if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; lastTick = 0; }
+}
+function applyHeroMode() {
+  if (GATES.some(q => matchMedia(q).matches)) disableScrub(); else enableScrub();
+  updateNav();
+}
+function pinToFinalStates() {
+  reducedPinned = true;
+  disableScrub();
+  $$('.reveal, .card, .awning').forEach(el => el.classList.add('in', 'done'));
+  pinBands();
+  if (holding) endHold();
+}
+function unpinFinalStates() { reducedPinned = false; }
+const MQLS = GATES.map(q => matchMedia(q));
+MQLS.forEach(m => m.addEventListener('change', applyHeroMode));
+RM.addEventListener('change', e => { if (e.matches) pinToFinalStates(); else applyHeroMode(); });
+
+applyLang();
+applyHeroMode();
+if (RM.matches) pinToFinalStates();
+addEventListener('resize', () => { if (scrubOn) onScroll(); }, {passive: true});
+})();
+</script>
+</body>
+</html>
